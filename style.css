@@ -1,0 +1,63 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.ursulet {
+    position: relative;
+    animation: dans 2s infinite;
+}
+
+@keyframes dans {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.flori {
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+    background: url('flori.png') no-repeat;
+    background-size: cover;
+}
+
+.intrebare {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+#da {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#nu {
+    background-color: #f44336;
+    color: white;
+}

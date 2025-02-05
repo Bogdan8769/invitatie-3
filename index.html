@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ursulețul Dansează</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="ursulet" class="ursulet">
+            <img src="ursulet.png" alt="Ursuleț" />
+            <div class="flori"></div>
+        </div>
+        <p class="intrebare">Bea, vrei să iesim?</p>
+        <div class="buttons">
+            <button id="da" onclick="raspunde('da')">DA</button>
+            <button id="nu" onclick="raspunde('nu')">NU</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+yesBtn.addEventListener("click", function () {
+  // Afișează mesajul "MERSIIII" și poza
+  document.getElementById("content").style.display = "none";
+  document.getElementById("thank-you").style.display = "block";
+});
